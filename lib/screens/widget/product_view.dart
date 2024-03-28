@@ -23,8 +23,8 @@ class _ProductView extends ConsumerState<ProductView> {
           ),
           Image(
             image: NetworkImage(widget.product.images[0]),
-            width: 150,
-            height: 150,
+            width: 10,
+            height: 10,
           ),
           Text(
             widget.product.title,

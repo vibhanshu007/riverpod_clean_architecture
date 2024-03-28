@@ -26,6 +26,7 @@ class _ProductCustomScrollView extends ConsumerState<ProductCustomScrollView> {
             mainAxisSpacing: 10.0,
             crossAxisSpacing: 10.0,
             childAspectRatio: 4.0,
+            mainAxisExtent: 250
           ),
           delegate: SliverChildBuilderDelegate(
                 (BuildContext context, int index) {
