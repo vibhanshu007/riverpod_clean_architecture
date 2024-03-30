@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_clean_architecture/data/models/product.dart';
 import 'package:riverpod_clean_architecture/data/repositories/product_repository.dart';
-import 'package:riverpod_clean_architecture/screens/widget/product_custom_scroll_view.dart';
+import 'package:riverpod_clean_architecture/screens/widget/product_custom_scroll_view_widget.dart';
 
 final productRepository = Provider<ProductRepository>((ref) {
   return ProductRepository(ref);
@@ -28,7 +28,7 @@ class HomeScreen extends ConsumerWidget {
           } else if (snapshot.hasData) {
             final products = snapshot.data!;
             print("products = $products");
-            return ProductCustomScrollView(products: products);
+            return ProductCustomScrollViewWidget(products: products);
           } else {
             return const Center(child: Text('No data available'));
           }
