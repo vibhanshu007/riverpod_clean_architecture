@@ -2,13 +2,16 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import 'package:riverpod_clean_architecture/screens/home_screen.dart';
+import 'package:riverpod_clean_architecture/providers/shared_pref_provider.dart';
+import 'package:riverpod_clean_architecture/screens/login_signup_screen.dart';
 
 class IntroScreen extends ConsumerWidget {
   const IntroScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    ref.watch(sharePreferencesUtils).setFirstLaunch(isFirstLaunch: false);
+
     return Scaffold(
       body: IntroductionScreen(
           pages: [
@@ -40,7 +43,7 @@ class IntroScreen extends ConsumerWidget {
             }
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (context) => const HomeScreen()),
+              MaterialPageRoute(builder: (context) => const LoginSignupScreen()),
             );
           },
           //ClampingScrollPhysics prevent the scroll offset from exceeding the bounds of the content.
