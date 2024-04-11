@@ -81,6 +81,5 @@ android/build/ios/Pods.build/Release-iphonesimulator/shared_preferences_foundati
 android/build/ios/Pods.build/Release-iphonesimulator/shared_preferences_foundation.build/dgph
 ios/firebase_app_id_file.json
 ios/Podfile.lock
-lib/firebase_options.dart
 macos/firebase_app_id_file.json
 macos/Runner/GoogleService-Info.plist
