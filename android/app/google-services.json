@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "243816904975",
+    "firebase_url": "https://flutterdemoapp-ede98-default-rtdb.firebaseio.com",
+    "project_id": "flutterdemoapp-ede98",
+    "storage_bucket": "flutterdemoapp-ede98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243816904975:android:5142d0f07a24bb0bfda67a",
+        "android_client_info": {
+          "package_name": "com.viibs.riverpod_clean_architecture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243816904975-9v8lkl764fst2mse30gtv4qdgmma8dbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS24EStqL-j_sl31-do_6sRzYAK9Y0cG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243816904975-9v8lkl764fst2mse30gtv4qdgmma8dbh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "243816904975-f9pqa3ks39falifq013mfgq27846m0q0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.viibs.riverpodCleanArchitecture.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

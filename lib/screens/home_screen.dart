@@ -16,7 +16,7 @@ class HomeScreen extends ConsumerWidget {
     final product = ref.watch(productRepository);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Riverpod + Retrofit Example'),
+        title: const Text('Book Store'),
       ),
       body: FutureBuilder<List<Product>>(
         future: product.getProducts(),
