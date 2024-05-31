@@ -1,11 +1,13 @@
 class Constants {
   // SharedPreference constants
 
-  static const PREF_FIRST_LAUNCH = "RCA_SP_001";
-  static const PREF_IS_USER_LOGGED_IN = "RCA_SP_002";
+  static const prefFirstLaunch = "RCA_SP_001";
+  static const prefIsUserLoggedIn = "RCA_SP_002";
+  static const prefSaveLoginToken = "RCA_SP_003";
+  static const prefSaveUserData = "RCA_SP_004";
 
   // Network constants
-  static const BASE_URL = "RCA_NW_001";
+  static const baseUrl = "RCA_NW_001";
 
 
 }

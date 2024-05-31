@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_clean_architecture/firebase_options.dart';
 import 'package:riverpod_clean_architecture/providers/shared_pref_provider.dart';
+import 'package:riverpod_clean_architecture/screens/home_screen.dart';
 import 'package:riverpod_clean_architecture/screens/intro_screen.dart';
 import 'package:riverpod_clean_architecture/screens/login_signup_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -33,6 +34,7 @@ class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final isFirstLaunch = ref.watch(sharePreferencesUtils).isFirstLaunch();
+    final isLoggedInUser = ref.watch(sharePreferencesUtils).isLoggedInUser();
 
     return MaterialApp(
         title: 'Flutter Demo',
@@ -40,6 +42,6 @@ class MyApp extends ConsumerWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: isFirstLaunch ? const IntroScreen() : const LoginSignupScreen());
+        home: isFirstLaunch ? const IntroScreen() : isLoggedInUser ? const HomeScreen() : const LoginSignupScreen());
   }
 }
